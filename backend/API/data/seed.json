@@ -1,0 +1,71 @@
+{
+    "initiated": true,
+    "data": [
+        {
+            "username": "WillHunt",
+            "password_hash": "x",
+            "firstName": "Will",
+            "lastName": "Hunting"
+        },
+        {
+            "username": "DoesNotExist",
+            "password_hash": "x",
+            "firstName": "Bob",
+            "lastName": "Paulson"
+        },
+        {
+            "username": "Bonez",
+            "password_hash": "x",
+            "firstName": "Puppy",
+            "lastName": "McGruff"
+        },
+        {
+            "username": "BlackLambo",
+            "password_hash": "x",
+            "firstName": "Bruce",
+            "lastName": "Wayne"
+        },
+        {
+            "username": "CrossPirate",
+            "password_hash": "x",
+            "firstName": "Jay",
+            "lastName": "Depp"
+        },
+        {
+            "username": "MisterSmile",
+            "password_hash": "x",
+            "firstName": "Dale",
+            "lastName": "Carnegie"
+        },
+        {
+            "username": "devTonyM",
+            "password_hash": "x",
+            "firstName": "Tony",
+            "lastName": "M"
+        },
+        {
+            "username": "WillHuntSucks",
+            "password_hash": "x",
+            "firstName": "Jimmy",
+            "lastName": "Kimmell"
+        },
+        {
+            "username": "NotThatJimmyCarr",
+            "password_hash": "x",
+            "firstName": "Jimmy",
+            "lastName": "Carr"
+        },
+        {
+            "username": "BrainyGirlsRule",
+            "password_hash": "x",
+            "firstName": "Rachel",
+            "lastName": "Riley"
+        },
+        {
+            "username": "BrainyGirlsRules",
+            "password_hash": "x",
+            "firstName": "Rachel",
+            "lastName": "Riley"
+        }
+    ]
+}
