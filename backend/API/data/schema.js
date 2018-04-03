@@ -6,8 +6,14 @@ const typeDefs = `
 type Query {
     user(id: ID, username: String): User
     allUsers: [User]
-    connections(src_id: ID!): [User]
     allConnections: [Connection]
+}
+
+interface Person {
+    id: Int
+    firstName: String
+    lastName: String
+    username: String
 }
 
 type User {
@@ -16,14 +22,20 @@ type User {
     lastName: String
     username: String
     email: String
-    connections: [User]
+    connections: [User!]
 }
 
 type Connection {
     id: Int
     src_id: Int
     conn_id: Int
-    status: String
+    status: Status!
+}
+
+enum Status {
+    LISTED
+    BLOCKED
+    REMOVED
 }
 
 `;

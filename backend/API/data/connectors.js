@@ -1,5 +1,5 @@
 import Sequelize from 'sequelize';
-import casual from 'casual'; // For initial seed fake data.
+// import casual from 'casual'; // For initial seed fake data.
 import _ from 'lodash';
 import fetch from 'node-fetch'; // For public API
 
@@ -41,14 +41,14 @@ const NetworkModel = db.define('network', {
     status: {
         type: Sequelize.STRING,
         defaultValue: 'LISTED'
-    }
+    },
     // Add Unique
 });
 
+
+
 UserModel.hasMany(NetworkModel)
 NetworkModel.belongsTo(UserModel)
-
-casual.seed(39109)
 
 db.sync().then(() => {
     const seed = JSON.parse(fs.readFileSync('/usr/src/app/data/seed.json'))
@@ -64,8 +64,8 @@ db.sync().then(() => {
         // create a network
         _.times(20, () => {
             return NetworkModel.create({
-                src_id: casual.INTEGER(from=1, to=10),
-                conn_id: casual.INTEGER(from=1, to=10),
+                src_id: Math.floor((Math.random() * 10) + 1),
+                conn_id: Math.floor((Math.random() * 10) + 1),
                 status: 'LISTED',
             });
         });
@@ -73,6 +73,7 @@ db.sync().then(() => {
         seed.initiated = true
         const temp = JSON.stringify(seed, null, 4)
         fs.writeFileSync('/usr/src/app/data/seed.json', temp)
+        return
     }
 });
 

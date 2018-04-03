@@ -11,6 +11,7 @@ var env = require('node-env-file');
 // Constants
 const GRAPHQL_PORT = 8080;
 const ENGINE_API_KEY = process.env.ENGINE_API_KEY; // Should be kept secret.
+console.log(ENGINE_API_KEY)
 
 const graphQLServer = express();
 const engine = new ApolloEngine({ apiKey: ENGINE_API_KEY });

@@ -20,7 +20,8 @@
     "node-fetch": "1.7.3",
     "sequelize": "4.37.4",
     "pg": "7.4.1",
-    "pg-hstore": "2.3.2"
+    "pg-hstore": "2.3.2",
+    "graphql-resolvers": "0.2.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
